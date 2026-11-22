@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/
+results_smoke/
+splits_smoke/
+results/features.npz

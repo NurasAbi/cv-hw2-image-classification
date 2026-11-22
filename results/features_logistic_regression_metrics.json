@@ -1,0 +1,35 @@
+{
+  "approach": "features_logistic_regression",
+  "selected": {
+    "setting": "C=0.01",
+    "rule": "best validation accuracy"
+  },
+  "trainable_parameters": "0 (frozen CNN) + sklearn classifier",
+  "feature_dim": 576,
+  "feature_extraction_seconds": 229.23680920002516,
+  "classifier_fit_seconds": 0.839768500009086,
+  "total_seconds": 230.07657770003425,
+  "train": {
+    "accuracy": 0.9881114130434783,
+    "macro_f1": 0.988164374560951
+  },
+  "val": {
+    "accuracy": 0.876358695652174,
+    "macro_f1": 0.8770120069030661
+  },
+  "test": {
+    "accuracy": 0.856909239574816,
+    "macro_f1": 0.8550896445698469
+  },
+  "preprocessing": "StandardScaler fitted on training features",
+  "environment": {
+    "python": "3.11.1",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.2.4",
+    "cuda_available": false,
+    "device": "cpu"
+  },
+  "smoke_test": false
+}

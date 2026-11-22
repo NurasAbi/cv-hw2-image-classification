@@ -1,0 +1,6 @@
+Approach,Trainable params (NN),Train acc,Val acc,Test acc,Test macro-F1,Train-test gap,Time (s),Time covers,Selected
+1. Full fine-tuning,1555781,0.9497,0.8587,0.8201,0.816,0.1296,623.2,training time up to the selected epoch,0.0003
+2. Classifier-head training,628773,0.9725,0.8899,0.8694,0.8676,0.103,405.7,training time up to the selected epoch,0.001
+3a. Features + logistic regression,0,0.9881,0.8764,0.8569,0.8551,0.1312,230.1,feature extraction + classifier fit,"""C=0.01"""
+3b. Features + linear SVM,0,0.999,0.875,0.8335,0.8309,0.1655,245.7,feature extraction + classifier fit,"""C=0.01"""
+3c. Features + random forest,0,1.0,0.8614,0.8275,0.8221,0.1725,236.9,feature extraction + classifier fit,"""n_estimators=300"""

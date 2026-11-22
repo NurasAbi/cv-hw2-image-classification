@@ -1,0 +1,35 @@
+{
+  "approach": "features_linear_svm",
+  "selected": {
+    "setting": "C=0.01",
+    "rule": "best validation accuracy"
+  },
+  "trainable_parameters": "0 (frozen CNN) + sklearn classifier",
+  "feature_dim": 576,
+  "feature_extraction_seconds": 229.23680920002516,
+  "classifier_fit_seconds": 16.425376799947117,
+  "total_seconds": 245.66218599997228,
+  "train": {
+    "accuracy": 0.9989809782608695,
+    "macro_f1": 0.9989864600918744
+  },
+  "val": {
+    "accuracy": 0.875,
+    "macro_f1": 0.873913210325386
+  },
+  "test": {
+    "accuracy": 0.833469610248024,
+    "macro_f1": 0.8308542525118069
+  },
+  "preprocessing": "StandardScaler fitted on training features",
+  "environment": {
+    "python": "3.11.1",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.2.4",
+    "cuda_available": false,
+    "device": "cpu"
+  },
+  "smoke_test": false
+}

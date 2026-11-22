@@ -1,0 +1,6 @@
+approach,errors,within_species,cross_species,share_within_species
+full_finetuning,660,569,91,0.8621212121212121
+head_training,479,427,52,0.8914405010438413
+features_logistic_regression,525,466,59,0.8876190476190476
+features_linear_svm,611,518,93,0.8477905073649754
+features_random_forest,633,566,67,0.8941548183254344

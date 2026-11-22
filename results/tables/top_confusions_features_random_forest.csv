@@ -1,0 +1,16 @@
+true_breed,predicted_as,count
+American Pit Bull Terrier,Staffordshire Bull Terrier,17
+Chihuahua,Shiba Inu,16
+Ragdoll,Birman,16
+American Pit Bull Terrier,American Bulldog,15
+Birman,Ragdoll,15
+Staffordshire Bull Terrier,American Bulldog,14
+British Shorthair,Russian Blue,13
+Persian,Maine Coon,13
+Russian Blue,British Shorthair,13
+English Cocker Spaniel,English Setter,12
+Staffordshire Bull Terrier,Boxer,12
+Chihuahua,Sphynx,11
+American Pit Bull Terrier,Boxer,10
+American Pit Bull Terrier,German Shorthaired,10
+Maine Coon,Bengal,10

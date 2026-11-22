@@ -1,0 +1,35 @@
+{
+  "approach": "features_random_forest",
+  "selected": {
+    "setting": "n_estimators=300",
+    "rule": "best validation accuracy"
+  },
+  "trainable_parameters": "0 (frozen CNN) + sklearn classifier",
+  "feature_dim": 576,
+  "feature_extraction_seconds": 229.23680920002516,
+  "classifier_fit_seconds": 7.674203799979296,
+  "total_seconds": 236.91101300000446,
+  "train": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0
+  },
+  "val": {
+    "accuracy": 0.8614130434782609,
+    "macro_f1": 0.8611077346435123
+  },
+  "test": {
+    "accuracy": 0.8274734260016353,
+    "macro_f1": 0.8221081535314503
+  },
+  "preprocessing": "none (trees are scale-invariant)",
+  "environment": {
+    "python": "3.11.1",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.2.4",
+    "cuda_available": false,
+    "device": "cpu"
+  },
+  "smoke_test": false
+}

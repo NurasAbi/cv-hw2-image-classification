@@ -1,0 +1,68 @@
+{
+  "approach": "head_training",
+  "selected": {
+    "lr": 0.001,
+    "epoch": 6,
+    "rule": "best validation accuracy over epochs and learning rates"
+  },
+  "hyperparameters": {
+    "loss": "CrossEntropyLoss",
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "lr_schedule": "cosine annealing",
+    "batch_size": 64,
+    "epochs": 6,
+    "candidate_lrs": [
+      0.001,
+      0.003
+    ],
+    "seed": 0,
+    "deterministic": true
+  },
+  "trainable_parameters": 628773,
+  "total_parameters": 1555781,
+  "trainable_layers": [
+    "classifier.0",
+    "classifier.3"
+  ],
+  "runs": [
+    {
+      "lr": 0.001,
+      "best_epoch": 6,
+      "best_val_acc": 0.8899456521739131,
+      "train_seconds_total": 623.9503946999903,
+      "train_seconds_until_best": 405.74994220002554
+    },
+    {
+      "lr": 0.003,
+      "best_epoch": 6,
+      "best_val_acc": 0.8899456521739131,
+      "train_seconds_total": 554.8280305999797,
+      "train_seconds_until_best": 362.2449789000093
+    }
+  ],
+  "train_seconds_all_runs": 1178.77842529997,
+  "train_seconds_selected_run_until_best": 405.74994220002554,
+  "train": {
+    "accuracy": 0.9724864130434783,
+    "macro_f1": 0.9726227053848318
+  },
+  "val": {
+    "accuracy": 0.8899456521739131,
+    "macro_f1": 0.8911572703342967
+  },
+  "test": {
+    "accuracy": 0.8694467157263559,
+    "macro_f1": 0.8676400695355361
+  },
+  "environment": {
+    "python": "3.11.1",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.2.4",
+    "cuda_available": false,
+    "device": "cpu"
+  },
+  "smoke_test": false
+}

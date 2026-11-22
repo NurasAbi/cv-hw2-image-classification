@@ -1,0 +1,11 @@
+a,b,a_only_correct,b_only_correct,acc_diff_a_minus_b,p_value
+full_finetuning,head_training,114,295,-0.04933224311801576,1.387463571936236e-19
+full_finetuning,features_logistic_regression,149,284,-0.03679476696647588,8.492591618035872e-11
+full_finetuning,features_linear_svm,253,302,-0.013355137639683878,0.04150467977847604
+full_finetuning,features_random_forest,207,234,-0.007358953393295176,0.21563471715318205
+head_training,features_logistic_regression,132,86,0.012537476151539884,0.0022312398001910947
+head_training,features_linear_svm,272,140,0.03597710547833188,7.564423680394817e-11
+head_training,features_random_forest,278,124,0.041973289724720586,1.1046769616716427e-14
+features_logistic_regression,features_linear_svm,213,127,0.023439629326792,3.6008205358904095e-06
+features_logistic_regression,features_random_forest,242,134,0.029435813573180702,2.7726420292991427e-08
+features_linear_svm,features_random_forest,266,244,0.005996184246388703,0.3524359805650484
